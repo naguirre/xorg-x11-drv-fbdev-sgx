@@ -185,7 +185,6 @@ static Bool omap_preinit(ScrnInfoPtr pScrn)
 	};
 	static const char *out_names[] = {
 		"lcd",
-		"tv",
 	};
 	FBDevPtr fPtr = FBDEVPTR(pScrn);
 	int i;

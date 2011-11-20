@@ -138,7 +138,7 @@ typedef struct {
 	enum fbdev_overlay_usage ovl_usage[3];
 	struct omap_overlay *ovl[3];
 	struct omap_fb *fb[3];
-	struct omap_output *out[2];
+	struct omap_output *out[1];
 
 	PixmapPtr pixmap;
 
