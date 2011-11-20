@@ -1366,12 +1366,12 @@ static Bool fbdev_randr12_preinit(ScrnInfoPtr pScrn)
 						rotate_mode(&mode));
 	}
 
-	fPtr->output_tv = fbdev_output_create(pScrn, "TV",
+/*	fPtr->output_tv = fbdev_output_create(pScrn, "TV",
 					      FBDEV_OUTPUT_TYPE_TV,
 					      fPtr->out[1], 1);
 	if (!fPtr->output_tv)
 		return FALSE;
-
+*/
 	if (!xf86InitialConfiguration(pScrn, TRUE)) {
 		xf86DrvMsg(pScrn->scrnIndex, X_ERROR,
 			   "Impossible initial config\n");
