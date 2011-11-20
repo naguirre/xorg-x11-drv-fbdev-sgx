@@ -1551,8 +1551,8 @@ static void omap_fill_color_key(ScrnInfoPtr pScrn, DrawablePtr drawable,
 
 	/* Display update will be schedule next */
 	extfb_lock_display_update(pScrn);
-	xf86XVFillKeyHelperPort(drawable, video_info, video_info->ckey,
-				clip_boxes, video_info->changed_ckey);
+/*	xf86XVFillKeyHelperPort(drawable, video_info, video_info->ckey,
+				clip_boxes, video_info->changed_ckey);*/
 	extfb_unlock_display_update(pScrn);
 }
 
