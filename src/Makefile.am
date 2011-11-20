@@ -31,7 +31,9 @@ PVR2D_CFLAGS = \
 	       -DSGX$(PVR2D_SGX) \
 	       -DSGX_CACHE_SEGMENTS=1 \
 	       -I/usr/include/SGX/hwdefs \
+	       -I/usr/include/services4/srvkm/hwdefs \
 	       -I/usr/include/SGX/include4 \
+	       -I/usr/include/services4 \
 	       -I/usr/src/kernel-headers/include
 
 AM_CFLAGS = @XORG_CFLAGS@ $(PVR2D_CFLAGS)
